@@ -6,7 +6,7 @@ The Ecw Sample template represents an ECW file for drawing on the map.
 ECW: ECW is a wavelet image compression system developed by ER Mapper.It allows you to combine and compress large sets of satellite images into a single file. 
 The images can be accessed very quickly at a variety of scales. It is very popular in the GIS community.
 
-Please refer to [Wiki](http://wiki.thinkgeo.com/wiki/map_suite_desktop_for_wpf) for the details.
+Please refer to [Wiki](System.String[]) for the details.
 
 ![Screenshot](https://raw.githubusercontent.com/ThinkGeo/EcwSample-ForWinForms/master/ScreenShot.png)
 
