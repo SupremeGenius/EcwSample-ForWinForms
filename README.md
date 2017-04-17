@@ -1,4 +1,4 @@
-# Ecw Sample for WinForms
+# Ecw Sample
 
 ### Description
 The Ecw Sample template represents an ECW file for drawing on the map.
