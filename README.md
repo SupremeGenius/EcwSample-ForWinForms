@@ -16,9 +16,16 @@ This sample makes use of the following NuGet Packages
 [MapSuite 10.0.0](https://www.nuget.org/packages?q=ThinkGeo)
 
 ### About the Code
+```csharp
+LayerOverlay overlay = new LayerOverlay();
 
-Working...
+//To resolve issue that we cannot run the executable by double click it on linux, we need to find out the absolute path by reflection.
+string baseDirectory = System.AppDomain.CurrentDomain.BaseDirectory;
+string ecwLayerFileName = Path.GetFullPath (Path.Combine (baseDirectory, "../../App_Data/World.ecw"));
 
+EcwRasterLayer ecwRasterLayer = new EcwRasterLayer(ecwLayerFileName);
+overlay.Layers.Add(ecwRasterLayer);
+```
 ### Getting Help
 
 [Map Suite Desktop for Winforms Wiki Resources](http://wiki.thinkgeo.com/wiki/map_suite_desktop_for_winforms)
@@ -32,7 +39,8 @@ Working...
 ### Key APIs
 This example makes use of the following APIs:
 
-Working...
+- [ThinkGeo.MapSuite.WinForms.LayerOverlay](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.winforms.layeroverlay)
+- [ThinkGeo.MapSuite.Layers.EcwRasterLayer](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.layers.ecwrasterlayer)
 
 ### About Map Suite
 Map Suite is a set of powerful development components and services for the .Net Framework.
